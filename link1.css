@@ -1,0 +1,12 @@
+a{font-size: 18px;
+   color: black;
+   background-color: white;
+   font-weight:bold;
+}
+
+a:hover{color: red;
+   text-decoration: overline;
+   transition : all 1.5s
+}
+
+a:focus{ color: yellow;}
