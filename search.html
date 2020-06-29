@@ -1,0 +1,554 @@
+<!DOCTYPE HTML5>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="search.css">
+
+		
+		
+	</style>
+	</head>
+	<body>
+		<div align="center">
+			<ul class="menuBar">
+				<li><a onclick=Opent1()>서구</a>
+				<li><a onclick=Opent2()>중구</a>		
+				<li><a onclick=Opent3()>동구</a>
+				<li><a onclick=Opent4()>대덕구</a>
+				<li><a onclick=Opent5()>유성구</a>
+				<li><a onclick=Opent6()>전체</a>
+				
+		</div>
+
+		<script type="text/javascript" src="search.js" >
+	
+		</script>
+		
+		
+		
+		<input type="text" id="tdVal"/><input type="button" onclick="td_copy(tdVal.value)" value="td값 가져오기"/>
+		
+	
+
+
+		<div id="d1" align="center">
+			<div id="input-from">
+				<input type="text" id="s" placeholder="원하시는 명칭을 입력하세요"/>
+				<input type="button" onclick="searchi(s.value)" value="값"/>
+			</div>
+
+		<div>
+			
+		 <table border= "1" align= "center" id="t1">
+		 	<thead>
+				<tr>
+					<th class="th1">서구</th>
+					<th class="th2">명칭</th>
+					<th class="th3">주소,전화번호</th>
+					<th class="th3">링크 or 대표메뉴</th>
+
+				</tr>
+			</thead>
+				<tbody>
+				<tr> 
+					<td class="th1">서구</td>
+					<td class="th2">한밭수목원</td>
+					<td class="th3">대전광역시 서구 둔산동 둔산대로 117번길 169 <br>Tel.042-270-8452</td>
+					<td class="th3"><a href="https://www.daejeon.go.kr/gar/index.do">https://www.daejeon.go.kr/gar/index.do</a></td>
+				 </tr>
+				<tr> 
+					<td class="th1">서구</td>
+					<td class="th2">대전 엑스포 시민광장</td>
+					<td class="th3">대전광역시 서구 만년동 둔산대로 169 <br>Tel.042-250-1400</td>
+					<td class="th3"><a href="http://dcckorea.or.kr:8088/expo/main.do">http://dcckorea.or.kr:8088/expo/main.do</a></td>
+				 </tr>
+				 <tr> 
+					<td class="th1">서구</td>
+					<td class="th2">대전시립미술관</td>
+					<td class="th3">대전광역시 서구 만년동 둔산대로 155 <br>Tel.042-270-8452</td>
+					<td class="th3"><a href="https://www.daejeon.go.kr/dma/index.do">https://www.daejeon.go.kr/dma/index.do</a></td>
+				 </tr>
+				 <tr> 
+					<td class="th1">서구</td>
+					<td class="th2">대전곤충생태관</td>
+					<td class="th3">대전광역시 서구 만년동 둔산대로 117번길 191 <br>Tel.042-270-5274</td>
+					<td class="th3"><a href="https://www.daejeon.go.kr/dma/index.do">https://www.daejeon.go.kr/dma/index.do</a></td>
+				 </tr>
+				 <tr> 
+					<td class="th1">서구</td>
+					<td class="th2">이응노미술관</td>
+					<td class="th3">대전광역시 서구 만년동 둔산대로 157<br> Tel.042-611-9800</td>
+					<td class="th3"><a href="https://www.leeungnomuseum.or.kr/">https://www.leeungnomuseum.or.kr/</a>
+					</td>
+				 </tr>
+				  <tr> 
+					<td class="th1">서구</td>
+					<td class="th2">천연기념물센터</td>
+					<td class="th3">대전광역시 서구 유등로 927 천연기념물센터<br> Tel.042-610-7610</td>
+					<td class="th3"><a href="https://www.nhc.go.kr:1500/main/main.do">https://www.nhc.go.kr:1500/main/main.do</a></td>
+				 </tr>
+				 <tr> 
+					<td class="th1">서구</td>
+					<td class="th2">남선공원</td>
+					<td class="th3">대전 서구 남선로 66 <br>Tel.042-488-5605</td>
+					<td class="th3"><a href="https://www.daejeon.go.kr/tou/index.dotourism/park/namsun/">https://www.daejeon.go.kr/tou/index.dotourism/park/namsun/</a></td>
+				 </tr>
+				 <tr> 
+					<td class="th1">서구</td>
+					<td class="th2">커피꽃담아</td>
+					<td class="th3">대전 서구 신갈마로 27 <br>Tel. 042-523-0705</td>
+					<td class="th3"><a href="https://www.instagram.com/cafe_dama/">https://www.instagram.com/cafe_dama/</a></td>
+				 </tr>
+				  <tr> 
+					<td class="th1">서구</td>
+					<td class="th2">미세노센세</td>
+					<td class="th3">대전 서구 둔지로 52 <br>Tel.042-483-0366</td>
+					<td class="th3">카레,튀김,우동</td>
+				 </tr>
+				  <tr> 
+					<td class="th1">서구</td>
+					<td class="th2">설해돈</td>
+					<td class="th3">대전 서구 대덕대로 233번길 36 라온채빌딩  <br>Tel.042-484-1119</td>
+					<td class="th3">돈까스,메갈까스</td>
+				 </tr>
+				  <tr> 
+					<td class="th1">서구</td>
+					<td class="th2">온유네 닭매운탕</td>
+					<td class="th3">대전 서구 문정로 170번길 50<br> Tel.042-255-9585</td>
+					<td class="th3">닭메운탕,볶음밥</td>
+				 </tr>
+				  <tr> 
+					<td class="th1">서구</td>
+					<td class="th2">가마솥보은순대</td>
+					<td class="th3">대전 서구 신갈마로 58-17 인터빌아파트<br> Tel.042-535-7605</td>
+					<td class="th3">순대곱창전골,순대국밥</td>
+				 </tr>
+				  <tr> 
+					<td class="th1">서구</td>
+					<td class="th2">매일반점</td>
+					<td class="th3">대전 서구 사마1길 16<br> Tel.010-7742-3228</td>
+					<td class="th3"><a href=#>짜장면</a></td>
+				 </tr>
+				  <tr> 
+					<td class="th1">서구</td>
+					<td class="th2">한민원조막창</td>
+					<td class="th3">대전 서구 괴정로 134번길 48<br> Tel.042-535-4582</td>
+					<td class="th3">돼지막창</td>
+				 </tr>
+				  <tr> 
+					<td class="th1">서구</td>
+					<td class="th2">신촌설렁탕</td>
+					<td class="th3">대전 서구 대덕대로 390<br> Tel.042-489-2322</td>
+					<td class="th3">설렁탕</td>
+				 </tr>
+				</tbody>
+
+			</table>
+			
+
+ 		<table border="1" align="center" id="t2">
+ 			<thead>
+
+
+				<tr>
+					<th class="th1">중구</th>
+					<th class="th2">명칭</th>
+					<th class="th3">주소,전화번호</th>
+					<th class="th3">링크 or 대표메뉴</th>
+
+				</tr>
+			</thead>
+			<tbody>
+
+				<tr> 
+					<td class="th1">중구</td>
+					<td class="th2">대전오월드</td>
+					<td class="th3">대전 중구 사정공원로 70<br> Tel.042-580-4820</td>
+					<td class="th3"><a href="http://www.oworld.kr/newkfsweb/kfs/dcco/dccoMainindex.do">http://www.oworld.kr/newkfsweb/kfs/dcco/dccoMainindex.do</a></td>
+				 </tr>
+				<tr> 
+					<td class="th1">중구</td>
+					<td class="th2">테미공원</td>
+					<td class="th3">대전 중구 보문로 199번길 37-36<br> Tel.042-606-7753</td>
+					<td class="th3">없음</td>
+				 </tr>
+				 <tr> 
+					<td class="th1">중구</td>
+					<td class="th2">테미오래</td>
+					<td class="th3">대전 중구 보문로 199번길 37-36<br> Tel.042-606-7753</td>
+					<td class="th3"><a href="http://temiorae.com/">http://temiorae.com/</a></td>
+				 </tr>
+				 <tr> 
+					<td class="th1">중구</td>
+					<td class="th2">한화생명 이글 스파크</td>
+					<td class="th3">대전 중구 대종로 373 <br>Tel.042-630-8200</td>
+					<td class="th3"><a href="http://www.hanwhaeagles.co.kr/html/main/main.asp">http://www.hanwhaeagles.co.kr/html/main/main.asp</a></td>
+				 </tr>
+				 <tr> 
+					<td class="th1">중구</td>
+					<td class="th2">대전근현대전시관</td>
+					<td class="th3">대전 중구 중앙로 101 <br>Tel.042-270-4537</td>
+					<td class="th3"><a href="https://www.daejeon.go.kr/upp/UppContentsHtmlView.do?menuSeq=4824">https://www.daejeon.go.kr/upp/UppContentsHtmlView.do?menuSeq=4824</a></td>
+				</tr>
+				<tr> 
+					<td class="th1">중구</td>
+					<td class="th2">천주교 대흥동성당</td>
+					<td class="th3">대전 중구 대종로 471<br>Tel.042-252-9611</td>
+					<td class="th3"><a href="https://www.daejeon.go.kr/upp/UppContentsHtmlView.do?menuSeq=4824">https://www.daejeon.go.kr/upp/UppContentsHtmlView.do?menuSeq=4824</a></td>
+				</tr>
+				<tr> 
+					<td class="th1">중구</td>
+					<td class="th2">아리할매추어탕</td>
+					<td class="th3">대전 중구 계백로 1584번길 14<br> Tel.042-284-9450</td>
+					<td class="th3">돌솥추어탕</td>
+				</tr>
+				<tr> 
+					<td class="th1">중구</td>
+					<td class="th2">농민순대</td>
+					<td class="th3">대전 중구 충무로 13 <br>Tel.042-256-1191</td>
+					<td class="th3">국밥,순대</td>
+				</tr>
+				<tr> 
+					<td class="th1">중구</td>
+					<td class="th2">풍미식당</td>
+					<td class="th3">대전 중구 대흥로 32<br> Tel.042-253-3228</td>
+					<td class="th3">묵은지닭도리탕, 김치찌개, 제육볶음</td>
+				</tr>
+				<tr> 
+					<td class="th1">중구</td>
+					<td class="th2">미소 본가 스마일 칼국수</td>
+					<td class="th3">대전 중구 보문로 230번길 82<br> Tel.042-221-1845</td>
+					<td class="th3">수육,칼국수</td>
+				</tr>
+				<tr> 
+					<td class="th1">중구</td>
+					<td class="th2">광천식당</td>
+					<td class="th3">대전 중구 대종로 505번길 29<br> Tel.042-226-4751</td>
+					<td class="th3">수육, 두부두루치기</td>
+				</tr>
+				<tr> 
+					<td class="th1">중구</td>
+					<td class="th2">오리야본점</td>
+					<td class="th3">대전 중구 수침로 102-1<br> Tel.042-528-9292</td>
+					<td class="th3">오리 생고기, 오리훈제</td>
+				</tr>
+				<tr> 
+					<td class="th1">중구</td>
+					<td class="th2">동소예</td>
+					<td class="th3">대전 중구 충무로 125<br> Tel.042-253-0606</td>
+					<td class="th3">생선구이, 백반</td>
+				</tr>
+				<tr> 
+					<td class="th1">중구</td>
+					<td class="th2">왕관식당</td>
+					<td class="th3">대전 중구 선화로 196번길 6<br> Tel.042-221-1663</td>
+					<td class="th3">콩나물밥, 육회</td>
+				</tr>
+				<tr> 
+					<td class="th1">중구</td>
+					<td class="th2">하루방만두</td>
+					<td class="th3">대전 중구 목종로 10번길 7 <br>Tel.042-226-2828</td>
+					<td class="th3">만두</td>
+				</tr>
+				<tr> 
+					<td class="th1">중구</td>
+					<td class="th2">진로집</td>
+					<td class="th3">대전 중구 중교로 45-5 <br>Tel.042-226-0914</td>
+					<td class="th3">두부두루치기</td>
+				</tr>
+				<tr> 
+					<td class="th1">중구</td>
+					<td class="th2">한영식당</td>
+					<td class="th3">대전 중구 계룡로 874번길 6<br> Tel.042-533-2644</td>
+					<td class="th3">닭도리탕</td>
+				</tr>
+				<tr> 
+					<td class="th1">중구</td>
+					<td class="th2">고단백식당</td>
+					<td class="th3">대전 중구 대종로 480번길 15<br> Tel.042-257-3681</td>
+					<td class="th3">콩국수</td>
+				</tr>
+				<tr> 
+					<td class="th1">중구</td>
+					<td class="th2">성심당본점</td>
+					<td class="th3">대전 중구 대종로 480번길 15<br> Tel.1588-8069</td>
+					<td class="th3">튀김소보로, 부추빵</td>
+				</tr>
+				<tr> 
+					<td class="th1">중구</td>
+					<td class="th2">희락반점</td>
+					<td class="th3">대전 중구 중앙로 129번길 21 <br>Tel.042-256-0273</td>
+					<td class="th3">중식</td>
+				</tr>
+			</tbody>
+				
+		</table>
+	 	<table border="1" align="center" id="t3">
+	 		<thead>
+	 			<tr>
+					<th class="th1">동구</th>
+					<th class="th2">명칭</th>
+					<th class="th3">주소,전화번호</th>
+					<th class="th3">링크 or 대표메뉴</th>
+
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="th1">동구</td>
+					<td class="th2">대청호 자연생태관</td>
+					<td class="th3">대전 동구 천개동로 41 대청호 자연생태관<br> Tel.042-251-4781</td>
+					<td class="th3"><a href="https://www.donggu.go.kr/dg/tour/contents/542">https://www.donggu.go.kr/dg/tour/contents/542</a></td>
+
+				</tr>
+
+				<tr>
+					<td class="th1">동구</td>
+					<td class="th2">한밭 교육 박물관</td>
+					<td class="th3">대전 동구 우암로 96 한밭교육박물관 <br>Tel.042-670-2200</td>
+					<td class="th3"><a href="http://www.hbem.or.kr/Good/">http://www.hbem.or.kr/Good/</a></td>
+
+				</tr>
+
+				<tr>
+					<td class="th1">동구</td>
+					<td class="th2">옛터 민속 박물관 </td>
+					<td class="th3">대전 동구 산내로 321-35 옛터민속박물관<br> Tel.042-274-0016</td>
+					<td class="th3"><a href="http://www.yetermuseum.com/">http://www.yetermuseum.com/</a></td>
+
+				</tr>
+				<tr>
+					<td class="th1">동구</td>
+					<td class="th2">만인산 자연휴양림</td>
+					<td class="th3">대전 동구 하소동 산 47 <br>Tel.042-280-5566</td>
+					<td class="th3">없음</td>
+				</tr>
+				<tr>
+					<td class="th1">동구</td>
+					<td class="th2">원래는 회계사가 꿈이었다</td>
+					<td class="th3">대전 동구 홍도로 71 <br>Tel.010-8130-9163 </td>
+					<td class="th3">골뱅이</td>
+
+
+
+				</tr>
+				<tr>
+					<td class="th1">동구</td>
+					<td class="th2">원조선지국</td>
+					<td class="th3">대전 동구 역전시장길 84<br> Tel.042-284-0170</td>
+					<td class="th3">선지국밥</td>
+
+
+				</tr>
+				<tr>
+					<td class="th1">동구</td>
+					<td class="th2">오씨칼국수</td>
+					<td class="th3">대전 동구 옛신탄진로 13<br> Tel.042-627-9972</td>
+					<td class="th3">손칼국수, 물총, 조개탕</td>
+
+
+				</tr>
+				<tr>
+					<td class="th1">동구</td>
+					<td class="th2">신도칼국수</td>
+					<td class="th3">대전 동구 대전로825번길 11 신도칼국수 <br>Tel.042-253-6799</td>
+					<td class="th3">칼국수, 수육, 두부두루치기</td>
+
+
+				</tr>
+				<tr>
+					<td class="th1">동구</td>
+					<td class="th2">원미면옥</td>
+					<td class="th3">대전 동구 옥천로 421 <br>Tel.042-286-7883</td>
+					<td class="th3">냉면</td>
+
+
+				</tr>
+				<tr>
+					<td class="th1">동구</td>
+					<td class="th2">박가네</td>
+					<td class="th3">대전 동구 동대전로 287 <br>Tel.042-621-6219</td>
+					<td class="th3">매운 양푼갈비찜</td>
+
+
+				</tr>
+				<tr>
+					<td class="th1">동구</td>
+					<td class="th2">착한낙지 홍도점</td>
+					<td class="th3">대전 동구 동서대로 1609-2<br> Tel.042-625-5100</td>
+					<td class="th3">낙지덮밥,갈낙탕</td>
+
+
+				</tr>
+			</tbody>
+
+						
+		</table>
+	 	<table border="1" align="center" id="t4">
+	 		<thead>
+	 			<tr>
+					<th class="th1">대덕구</th>
+					<th class="th2">명칭</th>
+					<th class="th3">주소,전화번호</th>
+					<th class="th3">링크 or 대표메뉴</th>
+
+				</tr>
+			</thead>
+	 			<tbody>
+				<tr>
+					<td class="th1">대덕구</td>
+					<td class="th2">오리몽 대전본점</td>
+					<td class="th3">대전 대덕구 송촌북로 36번길 11<br> Tel.042-636-5292</td>
+					<td class="th3">오리불고기</td>
+
+				</tr>
+				<tr>
+					<td class="th1">대덕구</td>
+					<td class="th2">대청마루 옥순네 추어칼국수 </td>
+					<td class="th3">대전 대덕구 송촌남로 21-1<br> Tel.042-632-7640</td>
+					<td class="th3">추어칼국수, 추어탕</td>
+
+				</tr>
+				<tr>
+					<td class="th1">대덕구</td>
+					<td class="th2">맑은 골호박 꼬지</td>
+					<td class="th3">대전 대덕구 선비마을로 5번길 9<br> Tel.042-626-4045</td>
+					<td class="th3">호박꼬지찌개, 호박꼬지볶음</td>
+
+				</tr>
+				<tr>
+					<td class="th1">대덕구</td>
+					<td class="th2">꽁뚜</td>
+					<td class="th3">대전 대덕구 신탄진로 36번길 111<br> Tel.042-483-9999</td>
+					<td class="th3">북경오리 로스</td>
+
+				</tr>
+				<tr>
+					<td class="th1">대덕구</td>
+					<td class="th2">매봉식당</td>
+					<td class="th3">대전 대덕구 계족로 664번길 113<br> Tel.042-625-3345</td>
+					<td class="th3">고기품은 두부전골</td>
+
+				</tr>
+			</tbody>
+
+			
+						
+		</table>
+	 	<table border="1" align="center" id="t5">
+	 		<thead>
+	 			<tr>
+					<th class="th1">유성구</th>
+					<th class="th2">명칭</th>
+					<th class="th3">주소,전화번호</th>
+					<th class="th3">링크 or 대표메뉴</th>
+
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="th1">유성구</td>
+					<td class="th2">대전 선사 박물관 </td>
+					<td class="th3">대전 유성구 노은동로 126 <br>Tel.042-270-8640</td>
+					<td class="th3"><a href="https://www.daejeon.go.kr/pre/index.do">https://www.daejeon.go.kr/pre/index.do</a></td>
+
+				</tr>
+
+				<tr>
+					<td class="th1">유성구</td>
+					<td class="th2">대전 시립 박물관 </td>
+					<td class="th3">대전 유성구 도안대로 398 <br>Tel.042-270-8600</td>
+					<td class="th3"><a href="https://www.daejeon.go.kr/his/index.do">https://www.daejeon.go.kr/his/index.do</a></td>
+
+				</tr>
+
+				<tr>
+					<td class="th1">유성구</td>
+					<td class="th2">대전 지질 박물관 </td>
+					<td class="th3">대전 유성구 과학로 124 한국지질연구원<br> Tel.042-868-3798</td>
+					<td class="th3"><a href="https://museum.kigam.re.kr/html/kr/">https://museum.kigam.re.kr/html/kr/</a></td>
+
+				</tr>
+				<tr>
+					<td class="th1">유성구</td>
+					<td class="th2">대전 화폐 박물관 </td>
+					<td class="th3">대전 유성구 과학로 80-67 한국조폐공사기술연구소(화폐박물관)<br> Tel.042-870-1200</td>
+					<td class="th3"><a href="https://museum.komsco.com/museum">https://museum.komsco.com/museum</a></td>
+
+				</tr>
+
+				<tr>
+					<td class="th1">유성구</td>
+					<td class="th2">국립 중앙 과학관 </td>
+					<td class="th3">대전 유성구 대덕대로 481 국립중앙과학관<br> Tel.042-601-7979</td>
+					<td class="th3"><a href="https://www.science.go.kr/">https://www.science.go.kr/</a></td>
+
+				</tr>
+				<tr>
+					<td class="th1">유성구</td>
+					<td class="th2">엑스포과학공원 </td>
+					<td class="th3">대전 유성구 대덕대로 480 <br>Tel.042-250-1111</td>
+					<td class="th3"><a href="http://www.expopark.co.kr/">http://www.expopark.co.kr/</a></td>
+
+				</tr>
+				<tr>
+					<td class="th1">유성구</td>
+					<td class="th2">호국철도기념관 </td>
+					<td class="th3">대전 유성구 갑동 산23-1 <br>Tel.042-718-7114</td>
+					<td class="th3"><a href="http://www.dnc.go.kr/html/kr/index.html">http://www.dnc.go.kr/html/kr/index.html</a></td>
+
+				</tr>
+				<tr>
+					<td class="th1">유성구</td>
+					<td class="th2">대전 월드컵경기장 </td>
+					<td class="th3">대전 유성구 월드컵대로 32<br> Tel.042-610-2900</td>
+					<td class="th3"> 없음 </td>
+
+				</tr>
+				<tr>
+					<td class="th1">유성구</td>
+					<td class="th2">산밑할머니</td>
+					<td class="th3">대전 유성구 관용로 33 <br>Tel.042-935-2947</td>
+					<td class="th3">보리밥, 묵사발</td>
+
+				</tr>
+				<tr>
+					<td class="th1">유성구</td>
+					<td class="th2">밥하기 싫은날 후루룩 손칼국수 </td>
+					<td class="th3">대전 유성구 반석로 11번길 66-11 <br>Tel.042-825-7565</td>
+					<td class="th3">손칼국수, 낙지볶음</td>
+
+				</tr>
+				<tr>
+					<td class="th1">유성구</td>
+					<td class="th2">다미원</td>
+					<td class="th3">대전 유성구 수통골로 33 <br>Tel.042-822-3966</td>
+					<td class="th3">불고기와 쌈밥</td>
+
+				</tr>
+				<tr>
+					<td class="th1">유성구</td>
+					<td class="th2">황토기와집</td>
+					<td class="th3">대전 유성구 대덕대로 <br>Tel.042-936-0001</td>
+					<td class="th3">칼구수,파전,보쌈</td>
+
+				</tr>
+				<tr>
+					<td class="th1">유성구</td>
+					<td class="th2">행복조개찜</td>
+					<td class="th3">대전 유성구 온천북로 13번길 40 채운타운 <br>Tel.042-867-5353</td>
+					<td class="th3">문어조개찜, 랍스터 조개찜</td>
+
+				</tr>
+				</tbody>
+
+				
+						
+		</table>
+	</div>
+
+
+		</div>
+
+	</body>
+</html>
